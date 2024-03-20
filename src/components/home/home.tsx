@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export function Home() {
-    const [hello, setHello] = useState('');
+    const [hello, setHello] = useState('Hello');
     useEffect(() => {
         const get = async () => {
             const { data } = await axios.get('http://localhost:4000/api/auth/sign-up');
